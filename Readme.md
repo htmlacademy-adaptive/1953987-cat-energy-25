@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Марина Добрусина](https://up.htmlacademy.ru/adaptive/25/user/1953987).
-* Наставник: [Сергей Зубов] (https://htmlacademy.ru/profile/serj).
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
