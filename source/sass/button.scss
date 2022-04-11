@@ -1,0 +1,22 @@
+.button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #68b738;
+  font-size: 20px;
+  line-height: 128%;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+}
