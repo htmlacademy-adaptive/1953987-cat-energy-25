@@ -1,0 +1,23 @@
+.operating-principle {
+  margin-bottom: 50px;
+}
+
+.operating-principle__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+}
+
+.operating-principle__list {
+  @include clear-list;
+}
+
+.operating-principle__item {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  padding-left: 80px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

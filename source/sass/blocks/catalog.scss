@@ -1,7 +1,5 @@
 .catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include clear-list;
 }
 
 .catalog__item {
@@ -11,12 +9,10 @@
 .catalog__link {
   text-decoration: none;
   color: #222222;
-  background-color: #ffffff;
 }
 
 .catalog__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: inherit;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;

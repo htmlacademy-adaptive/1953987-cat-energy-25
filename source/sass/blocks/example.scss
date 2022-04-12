@@ -1,5 +1,4 @@
 .example {
-  color: #000000;
   background-color: #eaeaea;
   padding-bottom: 40px;
 }
@@ -10,7 +9,6 @@
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 110%;
@@ -18,32 +16,24 @@
 
 .example__intro {
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 129%;
   color: #444444;
-  background-color: #eaeaea;
-  font-weight: 400;
 }
 
 .example__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include clear-list;
 }
 
 .example__item {
   display: inline-block;
   text-align: center;
   padding-bottom: 20px;
-}
 
-.example__item:not(:last-child) {
-  margin-right: 16px;
+  &:not(:last-child) {
+    padding-right: 16px;
+  }
 }
 
 .example__value {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   line-height: 100%;
 }
@@ -53,16 +43,13 @@
   font-size: 12px;
   line-height: 100%;
   color: #444444;
-  background-color: #eaeaea;
-  font-weight: 400;
 }
 
 .example__price {
-  display: inline-block;
-  text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  display: block;
   line-height: 143%;
-  padding-bottom: 40px;
+}
+
+.example__range {
+  padding-top: 40px;
 }

@@ -1,0 +1,14 @@
+.main-nav__list {
+  @include clear-list;
+}
+
+.main-nav__item {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+}

@@ -1,27 +1,19 @@
 .form__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include clear-list;
 }
 
 .form__group-title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
   font-size: 24px;
   line-height: 108%;
   text-transform: none;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .form__required {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 114%;
   text-transform: none;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .form__button {

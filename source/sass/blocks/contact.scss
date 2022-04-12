@@ -1,6 +1,8 @@
+.contact__wrapper {
+  display: flex;
+}
+
 .contact__title {
-  display: inline-block;
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -10,14 +12,7 @@
 }
 
 .contact__text {
-  display: inline-block;
   font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 143%;
   padding-right: 20px;
-}
-
-.contact__map {
-  display: block;
 }
