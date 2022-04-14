@@ -1,0 +1,49 @@
+.example {
+  background-color: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110%;
+  margin: 0;
+}
+
+.example__intro {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.example__list {
+  @include clear-list;
+  margin-bottom: 20px;
+}
+
+.example__item {
+  display: inline-block;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.example__parameter {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 100%;
+  color: #444444;
+}
+
+.example__price {
+  display: block;
+  line-height: 143%;
+  margin-bottom: 40px;
+}
