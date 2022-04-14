@@ -107,7 +107,9 @@
   font-family: "Arial", sans-serif;
   color: #444444;
   background-color: #f2f2f2;
-  padding-bottom: 20px;
+}
+.program-selection__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .program-selection__title {
@@ -129,13 +131,16 @@
 }
 
 .operating-principle {
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .operating-principle__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 110%;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .operating-principle__list {
@@ -155,18 +160,15 @@
 
 .example {
   background-color: #eaeaea;
+  padding-top: 25px;
   padding-bottom: 40px;
-}
-
-.example__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .example__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 110%;
+  margin: 0;
 }
 
 .example__intro {
@@ -183,10 +185,10 @@
 .example__item {
   display: inline-block;
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .example__item:not(:last-child) {
-  padding-right: 16px;
+  margin-right: 16px;
 }
 
 .example__value {
@@ -204,20 +206,16 @@
 .example__price {
   display: block;
   line-height: 143%;
-}
-
-.example__range {
-  padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 .range__image {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .range__result {
   font-size: 16px;
   line-height: 125%;
-  padding-bottom: 40px;
 }
 
 .contact__wrapper {
@@ -229,29 +227,27 @@
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
-  padding-right: 14px;
-  padding-left: 20px;
+  margin-right: 14px;
 }
 
 .contact__text {
   font-family: "Arial", sans-serif;
   line-height: 143%;
-  padding-right: 20px;
 }
 
 .main-footer {
-  color: #444444;
   background-color: #f2f2f2;
   padding-top: 40px;
+  padding-bottom: 22px;
 }
 
 .main-footer__logo {
-  padding-bottom: 32px;
+  display: inline-block;
+  margin-bottom: 52px;
 }
 
 .main-footer__social {
-  padding-top: 20px;
-  padding-bottom: 21px;
+  margin-bottom: 43px;
 }
 
 .social__list {
@@ -261,7 +257,7 @@
 }
 
 .copyright {
-  padding-bottom: 32px;
+  margin: 0;
 }
 
 .copyright__link {
@@ -274,20 +270,22 @@
 }
 
 .copyright__logo {
-  padding-left: 140px;
+  margin-left: 140px;
 }
 
 .selection {
   text-transform: uppercase;
+  padding-top: 27px;
   padding-bottom: 32px;
-  color: #444444;
 }
 
 .selection__title {
-  font-weight: inherit;
+  font-weight: 400;
   font-size: 36px;
   line-height: 100%;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 37px;
 }
 
 .selection__description {
@@ -329,7 +327,7 @@
 }
 
 .text-field__input {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
@@ -341,7 +339,6 @@
 }
 
 .main-inner__title {
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
@@ -353,8 +350,8 @@
   list-style-type: none;
 }
 
-.catalog__item {
-  padding-bottom: 33px;
+.catalog__item:not(:last-child) {
+  margin-bottom: 33px;
 }
 
 .catalog__link {
