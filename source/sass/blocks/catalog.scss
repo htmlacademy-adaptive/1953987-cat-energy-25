@@ -2,8 +2,8 @@
   @include clear-list;
 }
 
-.catalog__item {
-  padding-bottom: 33px;
+.catalog__item:not(:last-child) {
+  margin-bottom: 33px;
 }
 
 .catalog__link {

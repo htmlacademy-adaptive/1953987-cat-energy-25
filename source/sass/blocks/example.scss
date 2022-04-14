@@ -1,17 +1,14 @@
 .example {
   background-color: #eaeaea;
+  padding-top: 25px;
   padding-bottom: 40px;
-}
-
-.example__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .example__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 110%;
+  margin: 0;
 }
 
 .example__intro {
@@ -26,10 +23,10 @@
 .example__item {
   display: inline-block;
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   &:not(:last-child) {
-    padding-right: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -48,8 +45,5 @@
 .example__price {
   display: block;
   line-height: 143%;
-}
-
-.example__range {
-  padding-top: 40px;
+  margin-bottom: 40px;
 }

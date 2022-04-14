@@ -1,14 +1,16 @@
 .selection {
   text-transform: uppercase;
+  padding-top: 27px;
   padding-bottom: 32px;
-  color: #444444;
 }
 
 .selection__title {
-  font-weight: inherit;
+  font-weight: 400;
   font-size: 36px;
   line-height: 100%;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 37px;
 }
 
 .selection__description {
