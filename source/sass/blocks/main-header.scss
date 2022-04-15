@@ -1,5 +1,20 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .main-header__logo {
   text-decoration: none;
+  min-height: 65px;
 
   &:hover {
     opacity: 0.8;
@@ -7,5 +22,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -1,5 +1,24 @@
+.program-selection__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .program-selection__list {
   @include clear-list;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .program-selection__item {
@@ -9,6 +28,12 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
 
