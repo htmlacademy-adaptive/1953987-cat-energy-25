@@ -4,30 +4,9 @@
   padding-bottom: 40px;
 }
 
-.example__wrapper {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    display: flex;
-  }
-}
-
 .example__container {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: flex;
   }
 }
 

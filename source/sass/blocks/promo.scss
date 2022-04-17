@@ -13,19 +13,6 @@
   }
 }
 
-.promo__wrapper {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
-}
-
 .promo__title {
   font-weight: 400;
   font-size: 36px;

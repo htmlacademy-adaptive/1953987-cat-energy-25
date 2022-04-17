@@ -2,15 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
     position: absolute;
     background-color: #ffffff;
     max-width: 565px;
