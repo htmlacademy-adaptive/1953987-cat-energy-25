@@ -4,6 +4,12 @@
   padding-bottom: 40px;
 }
 
+.example__container {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: flex;
+  }
+}
+
 .example__title {
   font-weight: 400;
   font-size: 36px;

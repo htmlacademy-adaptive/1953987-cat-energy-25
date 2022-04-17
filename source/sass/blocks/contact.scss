@@ -1,5 +1,13 @@
 .contact__wrapper {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: #ffffff;
+    max-width: 565px;
+  }
 }
 
 .contact__title {
@@ -13,4 +21,9 @@
 .contact__text {
   font-family: "Arial", sans-serif;
   line-height: 143%;
+}
+
+.contact__map {
+  width: 100%;
+  object-fit: cover;
 }

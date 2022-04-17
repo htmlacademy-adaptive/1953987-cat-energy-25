@@ -4,12 +4,20 @@
   background-size: 320px auto;
   background-repeat: no-repeat;
   background-color: #68b738;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: none;
+  }
 }
 
 .promo__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
+  margin: 0;
 }
 
 .promo__slogan {

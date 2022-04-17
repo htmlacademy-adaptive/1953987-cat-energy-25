@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container-centerer">
     <a class="main-header__logo">
       <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип cat energy">
       <img src="img/logo-mobile-2.svg" width="101" height="18" alt="Логотип cat energy">
@@ -38,15 +39,15 @@
   </header>
   <main class="main-container">
     <section class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
+      <div class="promo__wrapper container-centerer">
+        <h1 class="promo__title">Функциональное<br> питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270" alt="Упаковка корма">
         <a class="promo__choice-program button" href="form.html">подобрать программу</a>
       </div>
     </section>
     <section class="program-selection">
-      <div class="program-selection__wrapper">
+      <div class="container-centerer">
         <h2 class="visually-hidden">Подбор программы</h2>
         <ul class="program-selection__list">
           <li class="program-selection__item">
@@ -65,7 +66,7 @@
       </div>
     </section>
     <section class="operating-principle">
-      <div class="operating-principle__wrapper">
+      <div class="container-centerer">
         <h2 class="operating-principle__title">Как это работает</h2>
         <ul class="operating-principle__list">
           <li class="operating-principle__item operating-principle__item--eco">
@@ -88,31 +89,35 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-          часов в день.</p>
-        <ul class="example__list">
-          <li class="example__item">
-            <p class="example__value">5 КГ</p>
-            <p class="example__parameter">снижение веса</p>
-          </li>
-          <li class="example__item">
-            <p class="example__value">60 ДНЕЙ</p>
-            <p class="example__parameter">затрачено времени</p>
-          </li>
-        </ul>
-        <span class="example__price">Затраты на питание: 15 000 РУБ.</span>
-      </div>
-      <div class="example__range range">
-        <div class="range__wrapper">
-          <img class="range__image" src="img/before-mobile.png" width="280" height="232" alt="Толстый кот">
-          <div class="range__scale-wrapper">
-            <div class="range__bar">
-              <span class="range__result">Было</span>
-              <button class="range__toggle" type="button"></button>
-              <span class="range__result">Стало</span>
+      <div class="container-centerer">
+        <div class="example__column">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.</p>
+          <div class="example__container">
+            <ul class="example__list">
+              <li class="example__item">
+                <p class="example__value">5 КГ</p>
+                <p class="example__parameter">снижение веса</p>
+              </li>
+              <li class="example__item">
+                <p class="example__value">60 ДНЕЙ</p>
+                <p class="example__parameter">затрачено времени</p>
+              </li>
+            </ul>
+            <span class="example__price">Затраты на питание: 15 000 РУБ.</span>
+          </div>
+        </div>
+        <div class="example__range range">
+          <div class="range__wrapper">
+            <img class="range__image" src="img/before-mobile.png" width="280" height="232" alt="Толстый кот">
+            <div class="range__scale-wrapper">
+              <div class="range__bar">
+                <button class="range__result" type="button">Было</button>
+                <input class="range__toggle" type="range">
+                <button class="range__result" type="button">Стало</button>
+              </div>
             </div>
           </div>
         </div>
@@ -120,17 +125,18 @@
     </section>
 
     <section class="contact">
-      <div class="contact__wrapper">
+      <div class="contact__wrapper container-centerer">
         <h2 class="contact__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
         <p class="contact__text">ул. Большая<br>
           Конюшенная, д. 19/8<br>
           Санкт-Петербург</p>
-        <img class="contact__map" src="img/location.png" width="320" height="362" alt="Карта локации">
       </div>
+      <img class="contact__map" src="img/location.png" width="320" height="362" alt="Карта локации">
+
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container-centerer">
       <a class="main-footer__logo">
         <img src="img/logo-text.svg" width="128" height="24" alt="логотип">
       </a>

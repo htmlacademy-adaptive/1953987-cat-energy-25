@@ -1,5 +1,13 @@
 .main-nav__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    width: 540px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 585px;
+  }
 }
 
 .main-nav__item {

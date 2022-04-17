@@ -1,5 +1,11 @@
 .program-selection__list {
   @include clear-list;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .program-selection__item {
@@ -9,6 +15,10 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
