@@ -1,3 +1,13 @@
+.choice {
+  &--radio {
+    padding-left: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
+  }
+}
+
 .choice__text {
   font-size: 16px;
   line-height: 112%;

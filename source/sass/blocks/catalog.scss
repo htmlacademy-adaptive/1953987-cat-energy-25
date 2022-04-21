@@ -16,6 +16,10 @@
 
 .catalog__item:not(:last-child) {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .catalog__link {

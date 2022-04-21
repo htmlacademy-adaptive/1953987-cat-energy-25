@@ -1,8 +1,20 @@
 .text-field {
   color: #444444;
+  display: flex;
+  white-space: nowrap;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
 
   @media (min-width: $desktop-width) {
-    min-width: 569px;
+    &--email {
+      width: 569px;
+    }
+
+    &--tel {
+      width: 572px;
+    }
   }
 }
 
@@ -12,6 +24,16 @@
   line-height: 112%;
   text-transform: uppercase;
   color: #444444;
+  width: 100%;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
+  }
 }
 
 .text-field__input::placeholder {
