@@ -1,0 +1,36 @@
+.selection-header {
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+  }
+}
+
+.selection-header__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.selection-header__description {
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}

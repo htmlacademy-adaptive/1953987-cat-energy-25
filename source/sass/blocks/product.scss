@@ -1,6 +1,16 @@
 .product {
   font-family: "Arial", sans-serif;
   line-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .product__title {
@@ -8,9 +18,28 @@
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .product__order {
   font-size: 16px;
   line-height: 125%;
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 4;
+    grid-column-end: -1;
+  }
 }
