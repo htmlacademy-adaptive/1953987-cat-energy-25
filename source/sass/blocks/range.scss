@@ -24,6 +24,11 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted #d9d9d9;
+  }
 }
 
 .range__progress {
@@ -88,6 +93,10 @@
       margin-top: -14px;
       filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
       box-shadow: inset #ffffff 0 0 0 10px;
+
+      &:active {
+        border: 1px solid #68b738;
+      }
     }
 
     input[type="range"]::-moz-range-track {
@@ -108,6 +117,10 @@
       margin-top: -14px;
       filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
       box-shadow: inset #ffffff 0 0 0 10px;
+
+      &:active {
+        border: 1px solid #68b738;
+      }
     }
   }
 

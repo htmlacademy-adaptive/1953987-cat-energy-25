@@ -68,6 +68,10 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program-selection__description {
