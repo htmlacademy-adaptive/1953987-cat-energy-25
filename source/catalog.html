@@ -9,13 +9,16 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container-centerer">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип cat energy">
-      <img src="img/logo-mobile-2.svg" width="101" height="18" alt="Логотип cat energy">
-    </a>
+  <header class="main-header main-header--closed main-header--nojs container-centerer">
+    <div class="main-header__top">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-pic" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип cat energy">
+        <img class="main-header__logo-text" src="img/logo-mobile-2.svg" width="101" height="18"
+          alt="Логотип cat energy">
+      </a>
+      <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -259,15 +262,19 @@
         <h2 class="contact__title">приглашаем<br> к сотрудничеству<br> дилеров!</h2>
         <p class="contact__text">ул. Большая<br>
           Конюшенная, д. 19/8<br>
-          Санкт-Петербург</p>
+          <span>Санкт-Петербург</span></p>
       </div>
-      <img class="contact__map" src="img/location.png" width="320" height="362" alt="Карта локации">
-
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586828!2d30.320853351938112!3d59.93871648178729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1651154191205!5m2!1sru!2sru"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper container-centerer">
-      <a class="main-footer__logo">
+      <a class="main-footer__logo" href="index.html">
         <img src="img/logo-text.svg" width="128" height="24" alt="логотип">
       </a>
       <div class="main-footer__social social">
@@ -290,6 +297,7 @@
       </p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

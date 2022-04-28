@@ -1,15 +1,50 @@
 .promo {
   color: #ffffff;
-  background-image: url("../img/index-background.jpg");
-  background-size: 320px auto;
-  background-repeat: no-repeat;
-  background-color: #68b738;
   padding-top: 27px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
-    background-color: #ffffff;
-    background-image: none;
+    padding-top: 64px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+  }
+}
+
+.promo__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 694px;
+    padding-left: 88px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-image: url("../img/index-background.jpg");
+    background-color: #68b738;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 302px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      top: -168px;
+      min-width: 720px;
+      min-height: 694px;
+    }
   }
 }
 
@@ -17,10 +52,55 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    font-size: 60px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .promo__slogan {
   line-height: 100%;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.promo__image {
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-50%);
+    width: 552px;
+    height: 499px;
+    top: 0;
+  }
 }

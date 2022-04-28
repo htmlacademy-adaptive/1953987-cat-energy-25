@@ -2,11 +2,25 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 628px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     background-color: #ffffff;
     max-width: 565px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 95px;
+    margin-left: 110px;
   }
 }
 
@@ -16,14 +30,43 @@
   line-height: 125%;
   text-transform: uppercase;
   margin-right: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 
 .contact__text {
   font-family: "Arial", sans-serif;
   line-height: 143%;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 125%;
+    text-align: end;
+
+    span {
+      display: block;
+      margin-top: 16px;
+    }
+  }
 }
 
 .contact__map {
+  height: 362px;
   width: 100%;
-  object-fit: cover;
+
+  iframe {
+    border: none;
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

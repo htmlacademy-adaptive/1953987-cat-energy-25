@@ -12,6 +12,9 @@
   font-family: "Arial", sans-serif;
   color: #444444;
   background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 18px;
+  padding-left: 19px;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -20,8 +23,19 @@
       margin-bottom: 0;
     }
   }
-}
 
+  @media (min-width: $tablet-width) {
+    padding-left: 53px;
+    padding-top: 75px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 52px;
+    padding-top: 77px;
+    padding-bottom: 55px;
+  }
+}
 
 .program-selection__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -30,6 +44,21 @@
   line-height: 154%;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 0;
+  padding-left: 72px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 100%;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .program-selection__catalog {
@@ -39,4 +68,44 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.program-selection__description {
+  position: relative;
+  margin-top: 0;
+  padding-right: 33px;
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 357px;
+    line-height: 150%;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 51px;
+    margin-bottom: 23px;
+    padding-bottom: 0;
+  }
+
+  &--padding {
+    @media (min-width: $desktop-width) {
+      padding-right: 85px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    border: 1px solid #d9d9d9;
+    bottom: 0;
+    left: 0;
+    right: 20px;
+    width: 240px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
