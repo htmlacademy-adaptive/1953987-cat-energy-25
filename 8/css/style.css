@@ -95,6 +95,7 @@
 .main-header__logo {
   text-decoration: none;
   height: 65px;
+  cursor: pointer;
 }
 .main-header__logo:hover {
   opacity: 0.8;
@@ -521,6 +522,9 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+.program-selection__catalog:active {
+  opacity: 0.3;
+}
 
 .program-selection__description {
   position: relative;
@@ -879,6 +883,12 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .range__result {
+    border-bottom: 1px dotted #d9d9d9;
+  }
 }
 
 .range__progress {
@@ -941,6 +951,9 @@
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     box-shadow: inset #ffffff 0 0 0 10px;
   }
+  .range__progress input[type=range]::-webkit-slider-thumb:active {
+    border: 1px solid #68b738;
+  }
   .range__progress input[type=range]::-moz-range-track {
     height: 6px;
     background: #dcdcdc;
@@ -958,6 +971,9 @@
     margin-top: -14px;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     box-shadow: inset #ffffff 0 0 0 10px;
+  }
+  .range__progress input[type=range]::-moz-range-thumb:active {
+    border: 1px solid #68b738;
   }
 }
 .range__progress::before {
@@ -1053,11 +1069,11 @@
 
 .contact__map {
   height: 362px;
-  width: 100%;
 }
 .contact__map iframe {
   border: none;
   display: block;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .contact__map {
