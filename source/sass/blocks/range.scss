@@ -34,8 +34,6 @@
 .range__progress {
   position: relative;
 
-
-
   &::before {
     content: "";
     background-color: #68b738;
@@ -45,7 +43,6 @@
     position: absolute;
     top: 6px;
     left: 8px;
-
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -70,7 +67,6 @@
   width: 85px;
   appearance: none;
   border-radius: 6px;
-
 
   &::-webkit-slider-runnable-track {
     width: 85px;
