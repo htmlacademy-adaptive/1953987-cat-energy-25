@@ -34,95 +34,7 @@
 .range__progress {
   position: relative;
 
-  input[type="range"] {
-    width: 85px;
-    appearance: none;
-    border-radius: 6px;
-  }
 
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 85px;
-    height: 14px;
-    border: 1px solid #cdcdcd;
-    background-color: #ffffff;
-    border-radius: 6px;
-    padding: 3px 5px;
-    box-sizing: border-box;
-  }
-
-  input[type="range"]::-webkit-slider-thumb {
-    appearance: none;
-  }
-
-  input[type="range"]::-moz-range-track {
-    width: 85px;
-    height: 14px;
-    border: 1px solid #cdcdcd;
-    background-color: #ffffff;
-    border-radius: 6px;
-    padding: 3px 5px;
-    box-sizing: border-box;
-  }
-
-  input[type="range"]::-moz-range-thumb {
-    appearance: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    input[type="range"] {
-      width: 426px;
-      appearance: none;
-    }
-
-    input[type="range"]::-webkit-slider-runnable-track {
-      height: 6px;
-      background: #dcdcdc;
-      border-radius: 6px;
-      border: 0;
-    }
-
-    input[type="range"]::-webkit-slider-thumb {
-      border-radius: 50%;
-      cursor: pointer;
-      width: 34px;
-      height: 34px;
-      appearance: none;
-      background: #68b738;
-      border: 1px solid #cdcdcd;
-      box-sizing: border-box;
-      margin-top: -14px;
-      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-      box-shadow: inset #ffffff 0 0 0 10px;
-
-      &:active {
-        border: 1px solid #68b738;
-      }
-    }
-
-    input[type="range"]::-moz-range-track {
-      height: 6px;
-      background: #dcdcdc;
-      border-radius: 6px;
-    }
-
-    input[type="range"]::-moz-range-thumb {
-      border-radius: 50%;
-      cursor: pointer;
-      width: 34px;
-      height: 34px;
-      appearance: none;
-      background: #68b738;
-      border: 1px solid #cdcdcd;
-      box-sizing: border-box;
-      margin-top: -14px;
-      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-      box-shadow: inset #ffffff 0 0 0 10px;
-
-      &:active {
-        border: 1px solid #68b738;
-      }
-    }
-  }
 
   &::before {
     content: "";
@@ -150,5 +62,98 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+  }
+}
+
+.range__toggle {
+
+  width: 85px;
+  appearance: none;
+  border-radius: 6px;
+
+
+  &::-webkit-slider-runnable-track {
+    width: 85px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 3px 5px;
+    box-sizing: border-box;
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+  }
+
+  &::-moz-range-track {
+    width: 85px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 3px 5px;
+    box-sizing: border-box;
+  }
+
+  &::-moz-range-thumb {
+    appearance: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 426px;
+
+    &::-webkit-slider-runnable-track {
+      height: 6px;
+      background: #dcdcdc;
+      border: 0;
+    }
+
+    &::-webkit-slider-thumb {
+      border-radius: 50%;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      background: #68b738;
+      border: 1px solid #cdcdcd;
+      box-sizing: border-box;
+      margin-top: -14px;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      box-shadow: inset #ffffff 0 0 0 10px;
+
+      &:hover {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      }
+
+      &:active {
+        border: 1px solid #68b738;
+      }
+    }
+
+    &::-moz-range-track {
+      height: 6px;
+      background: #dcdcdc;
+    }
+
+    &::-moz-range-thumb {
+      border-radius: 50%;
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      background: #68b738;
+      border: 1px solid #cdcdcd;
+      box-sizing: border-box;
+      margin-top: -14px;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      box-shadow: inset #ffffff 0 0 0 10px;
+
+      &:hover {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+      }
+
+      &:active {
+        border: 1px solid #68b738;
+      }
+    }
   }
 }

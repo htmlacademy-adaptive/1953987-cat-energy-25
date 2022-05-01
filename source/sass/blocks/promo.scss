@@ -2,6 +2,7 @@
   color: #ffffff;
   padding-top: 27px;
   padding-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -11,15 +12,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 111px;
-  }
-}
-
-.promo__wrapper {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    min-height: 694px;
-    padding-left: 88px;
   }
 
   &::before {
@@ -42,9 +34,29 @@
     @media (min-width: $desktop-width) {
       display: block;
       top: -168px;
+      width: 50%;
       min-width: 720px;
       min-height: 694px;
     }
+  }
+}
+
+.promo__button {
+  font-size: 14px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: $tablet-width) {
+    min-height: 694px;
+    padding-left: 88px;
   }
 }
 

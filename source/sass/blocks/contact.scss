@@ -19,9 +19,15 @@
     max-width: 565px;
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 95px;
-    margin-left: 110px;
+    top: 95px;
+    left: 110px;
   }
+}
+
+.contact__container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .contact__title {
@@ -64,6 +70,7 @@
     border: none;
     display: block;
     width: 100%;
+    height: 100%;
   }
 
   @media (min-width: $tablet-width) {

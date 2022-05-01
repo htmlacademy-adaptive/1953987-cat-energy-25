@@ -11,10 +11,10 @@
 
 .main-footer__wrapper {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 137px;
-    row-gap: 37px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +46,16 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+}
+
+.main-footer__img {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

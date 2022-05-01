@@ -26,18 +26,10 @@
     &:hover {
       text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
       opacity: 0.6;
-
-      @media (min-width: $desktop-width) {
-        opacity: 0.6;
-      }
     }
 
     &:active {
       opacity: 0.3;
-
-      @media (min-width: $desktop-width) {
-        opacity: 0.3;
-      }
     }
 
     @media (min-width: $tablet-width) {
@@ -51,7 +43,6 @@
     @media (min-width: $desktop-width) {
       font-size: 20px;
       line-height: 150%;
-
       padding-top: 69px;
       padding-bottom: 10px;
     }
@@ -76,14 +67,11 @@
   @media (min-width: $tablet-width) {
     border-top: none;
     margin-right: 35px;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
+    margin-right: 0;
 
     @media (min-width: $tablet-width) {
       border-bottom: none;
