@@ -712,7 +712,7 @@
 .operating-principle__item--eco::before {
   position: absolute;
   content: "";
-  background-image: url(../img/eco.svg);
+  background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
   background-size: 60px 60px;
   width: 60px;
@@ -730,7 +730,7 @@
 .operating-principle__item--form::before {
   position: absolute;
   content: "";
-  background-image: url(../img/form.svg);
+  background-image: url("../img/form.svg");
   background-repeat: no-repeat;
   background-size: 60px 60px;
   width: 60px;
@@ -753,7 +753,7 @@
 .operating-principle__item--food::before {
   position: absolute;
   content: "";
-  background-image: url(../img/food.svg);
+  background-image: url("../img/food.svg");
   background-repeat: no-repeat;
   background-size: 60px 60px;
   width: 60px;
@@ -771,7 +771,7 @@
 .operating-principle__item--time::before {
   position: absolute;
   content: "";
-  background-image: url(../img/time.svg);
+  background-image: url("../img/time.svg");
   background-repeat: no-repeat;
   background-size: 60px 60px;
   width: 60px;
