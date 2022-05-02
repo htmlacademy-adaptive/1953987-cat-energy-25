@@ -279,11 +279,13 @@
     color: #000000;
     padding-top: 64px;
     padding-left: 87px;
+    min-height: 810px;
   }
 }
 @media (min-width: 1440px) {
   .promo {
     padding-top: 111px;
+    min-height: 471px;
   }
 }
 .promo::before {
@@ -329,7 +331,6 @@
 
 @media (min-width: 768px) {
   .promo__wrapper {
-    min-height: 694px;
     padding-left: 88px;
   }
 }
@@ -393,7 +394,7 @@
     transform: translateX(-50%);
     width: 552px;
     height: 499px;
-    top: 0;
+    top: 32px;
   }
 }
 
@@ -894,6 +895,7 @@
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 54px;
+    width: 97%;
   }
 }
 @media (min-width: 1440px) {
