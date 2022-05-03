@@ -1,14 +1,18 @@
 .button {
+  display: inline-block;
   font-family: inherit;
   color: #ffffff;
   background-color: #68b738;
   font-size: 20px;
-  line-height: 128%;
+  line-height: 129%;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
 
   &:hover {
     background-color: #5eaa2f;

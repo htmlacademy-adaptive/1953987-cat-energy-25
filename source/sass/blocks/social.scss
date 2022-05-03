@@ -1,3 +1,22 @@
 .social__list {
   @include clear-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.social__icon {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

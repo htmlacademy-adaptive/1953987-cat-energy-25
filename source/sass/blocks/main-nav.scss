@@ -1,22 +1,110 @@
-.main-nav__list {
-  @include clear-list;
-
+.main-nav {
   @media (min-width: $tablet-width) {
     width: 540px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 585px;
+    width: 685px;
+  }
+}
+
+.main-nav__list {
+  @include clear-list;
+
+  a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 500;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 133%;
+      font-weight: 400;
+      padding-top: 42px;
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 150%;
+      padding-top: 69px;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 686px;
   }
 }
 
 .main-nav__item {
-  font-size: 20px;
-  line-height: 100%;
-  font-weight: 500;
+  position: relative;
+  border-top: 1px solid #e6e6e6;
 
-  a {
-    color: #000000;
-    text-decoration: none;
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    margin-right: 35px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+    margin-right: 0;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+
+  &--current::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 2px;
+      bottom: 0;
+      background-color: #68b738;
+      color: #68b738;
+      z-index: 2;
+      content: "";
+    }
+  }
+
+  &--white {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+
+      &::before {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  &--green a {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 }
