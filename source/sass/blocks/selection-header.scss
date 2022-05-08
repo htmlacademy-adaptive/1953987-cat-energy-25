@@ -22,10 +22,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
+    font-size: 60px;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;
+    padding-left: 0;
   }
 }
 
@@ -33,4 +36,15 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 323px;
+    font-size: 20px;
+    line-height: 150%;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

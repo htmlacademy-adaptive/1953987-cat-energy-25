@@ -1,4 +1,19 @@
 .selection {
   text-transform: uppercase;
   padding-bottom: 32px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+}
+
+.selection__form {
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

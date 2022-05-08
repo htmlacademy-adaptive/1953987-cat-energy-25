@@ -2,4 +2,16 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 133%;
+
+  &:last-child {
+    text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 100%;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 7px;
+  }
 }
