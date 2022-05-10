@@ -41,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 88px;
+    padding-left: 60px;
   }
 }
 
@@ -92,7 +92,8 @@
   width: 30px;
   height: 30px;
   left: 0;
-  top: -1px;
+  top: 50%;
+  transform: translateY(-50%);
   background: #ffffff;
   border: 1px solid #cdcdcd;
 
@@ -100,7 +101,6 @@
     width: 40px;
     height: 40px;
     left: 0;
-    top: -1px;
   }
 
   &:hover {

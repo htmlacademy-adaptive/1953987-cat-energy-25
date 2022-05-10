@@ -47,7 +47,7 @@
   color: #444444;
   width: 100%;
   margin-left: 15px;
-  padding: 13px 14px 14px 15px;
+  padding: 13px 40px 14px 15px;
   border: 1px solid #e7e7e7;
 
   &:hover {
@@ -59,11 +59,31 @@
     outline: none;
   }
 
+  &:focus:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:hover ~ .text-field__icon--tel {
+    fill: #68b738;
+  }
+
+  &:hover ~ .text-field__icon--email {
+    stroke: #68b738;
+  }
+
+  &:focus:invalid ~ .text-field__icon--email {
+    stroke: #ff8282;
+  }
+
+  &:focus:invalid ~ .text-field__icon--tel {
+    fill: #ff8282;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 11px;
     font-size: 20px;
     line-height: 150%;
-    padding: 10px 14px 11px 19px;
+    padding: 10px 40px 11px 19px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,13 +105,19 @@
       height: 174px;
     }
   }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 }
 
 .text-field__icon {
   position: absolute;
   right: 15px;
 
-  &:focus {
-    fill: #68b738;
+  &--email {
+    stroke: #000000;
   }
 }
