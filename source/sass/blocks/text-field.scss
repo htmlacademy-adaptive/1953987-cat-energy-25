@@ -9,18 +9,22 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 150%;
-
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
   }
 
   &--email {
+    &:hover .text-field__icon {
+      stroke: #68b738;
+    }
+
     @media (min-width: $desktop-width) {
       width: 569px;
       margin-bottom: 0;
@@ -32,12 +36,38 @@
   }
 
   &--tel {
+    &:hover .text-field__icon {
+      fill: #68b738;
+    }
+
     @media (min-width: $desktop-width) {
       width: 572px;
     }
   }
-}
 
+  &--error {
+    .text-field__input {
+      box-shadow: 0 0 0 2px #ff8282;
+      border-color: transparent;
+    }
+
+    &.text-field--email {
+      /* stylelint-disable */
+      .text-field__icon
+
+      /* stylelint-enable */
+        {
+        stroke: #ff8282;
+      }
+    }
+
+    &.text-field--tel {
+      .text-field__icon {
+        fill: #ff8282;
+      }
+    }
+  }
+}
 
 .text-field__input {
   font-family: inherit;
@@ -57,26 +87,6 @@
   &:focus {
     border-color: #444444;
     outline: none;
-  }
-
-  &:focus:invalid {
-    border: 2px solid #ff8282;
-  }
-
-  &:hover ~ .text-field__icon--tel {
-    fill: #68b738;
-  }
-
-  &:hover ~ .text-field__icon--email {
-    stroke: #68b738;
-  }
-
-  &:focus:invalid ~ .text-field__icon--email {
-    stroke: #ff8282;
-  }
-
-  &:focus:invalid ~ .text-field__icon--tel {
-    fill: #ff8282;
   }
 
   @media (min-width: $tablet-width) {
