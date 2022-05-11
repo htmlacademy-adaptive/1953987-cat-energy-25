@@ -1863,13 +1863,18 @@
   margin-bottom: 14px;
 }
 @media (min-width: 768px) {
+  .text-field:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) {
   .text-field {
     font-size: 20px;
     line-height: 150%;
   }
-  .text-field:not(:last-child) {
-    margin-bottom: 20px;
-  }
+}
+.text-field--email:hover .text-field__icon {
+  stroke: #68b738;
 }
 @media (min-width: 1440px) {
   .text-field--email {
@@ -1880,10 +1885,26 @@
     margin-bottom: 0;
   }
 }
+.text-field--tel:hover .text-field__icon {
+  fill: #68b738;
+}
 @media (min-width: 1440px) {
   .text-field--tel {
     width: 572px;
   }
+}
+.text-field--error .text-field__input {
+  box-shadow: 0 0 0 2px #ff8282;
+  border-color: transparent;
+}
+.text-field--error.text-field--email {
+  /* stylelint-disable */
+}
+.text-field--error.text-field--email .text-field__icon {
+  stroke: #ff8282;
+}
+.text-field--error.text-field--tel .text-field__icon {
+  fill: #ff8282;
 }
 
 .text-field__input {
@@ -1903,21 +1924,6 @@
 .text-field__input:focus {
   border-color: #444444;
   outline: none;
-}
-.text-field__input:focus:invalid {
-  border: 2px solid #ff8282;
-}
-.text-field__input:hover ~ .text-field__icon--tel {
-  fill: #68b738;
-}
-.text-field__input:hover ~ .text-field__icon--email {
-  stroke: #68b738;
-}
-.text-field__input:focus:invalid ~ .text-field__icon--email {
-  stroke: #ff8282;
-}
-.text-field__input:focus:invalid ~ .text-field__icon--tel {
-  fill: #ff8282;
 }
 @media (min-width: 768px) {
   .text-field__input {
