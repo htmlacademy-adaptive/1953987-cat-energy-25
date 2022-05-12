@@ -1,13 +1,33 @@
 .order-all {
   color: #ffffff;
   background-image: url("../img/catalog-background.jpg");
-  background-size: 320px 289px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #68b738;
+  text-align: center;
+  padding-top: 58px;
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 57px 124px 60px 77px;
+    justify-content: space-between;
+
+    svg {
+      width: 80px;
+      height: 82px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    margin-left: 97px;
+    margin-left: 79px;
+    margin-bottom: 0;
     width: 245px;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 56px;
+    padding-bottom: 42px;
+    align-items: center;
   }
 }
 
@@ -15,14 +35,16 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 125%;
-  margin-top: 35px;
+  margin-top: 46px;
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 69px;
+    margin-top: 0;
+    padding-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 69px;
+    margin-top: 46px;
+    padding-top: 0;
   }
 }

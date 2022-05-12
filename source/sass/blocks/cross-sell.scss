@@ -20,8 +20,18 @@
 }
 
 .cross-sell__container {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    margin-bottom: 69px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 896px;
+    border: none;
+    margin-bottom: 0;
   }
 }
 
@@ -30,13 +40,85 @@
   font-size: 24px;
   line-height: 100%;
   margin-top: 0;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
+  position: relative;
+  width: 100%;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 81px;
+    font-size: 36px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 100vw;
+    height: 2px;
+    background: #68b738;
+    z-index: -1;
+    left: 50%;
+
+    @media (min-width: $tablet-width) {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.cross-sell__color {
+  padding-right: 22px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+}
+
+.cross-sell__product {
+  border-top: 1px solid #cdcdcd;
+
+  margin-bottom: 19px;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-of-type {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
   }
 }

@@ -2,18 +2,73 @@
   color: #444444;
   display: flex;
   white-space: nowrap;
+  align-items: center;
+  font-size: 16px;
+  line-height: 112%;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    &--email {
-      width: 569px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  &--email {
+    .text-field__icon {
+      stroke: #000000;
     }
 
-    &--tel {
+    &:hover .text-field__icon {
+      stroke: #68b738;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 569px;
+      margin-bottom: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--tel {
+    &:hover .text-field__icon {
+      fill: #68b738;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 572px;
+    }
+  }
+
+  &--error {
+    .text-field__input {
+      box-shadow: 0 0 0 2px #ff8282;
+      border-color: transparent;
+    }
+
+    &.text-field--email {
+      /* stylelint-disable */
+      .text-field__icon
+
+      /* stylelint-enable */
+        {
+        stroke: #ff8282;
+      }
+    }
+
+    &.text-field--tel {
+      .text-field__icon {
+        fill: #ff8282;
+      }
     }
   }
 }
@@ -26,16 +81,58 @@
   color: #444444;
   width: 100%;
   margin-left: 15px;
+  padding: 13px 40px 14px 15px;
+  border: 1px solid #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #444444;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 11px;
+    font-size: 20px;
+    line-height: 150%;
+    padding: 10px 40px 11px 19px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 14px;
   }
+
+  &::placeholder {
+    color: #444444;
+  }
+
+  &--textarea {
+    margin-left: 0;
+    resize: none;
+    padding: 10px 12px 14px 15px;
+    height: 150px;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      height: 174px;
+    }
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 }
 
-.text-field__input::placeholder {
-  color: #444444;
+.text-field__icon {
+  position: absolute;
+  right: 15px;
+
+  &--email {
+    stroke: #000000;
+  }
 }

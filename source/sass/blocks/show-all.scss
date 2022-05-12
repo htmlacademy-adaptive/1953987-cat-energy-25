@@ -1,18 +1,83 @@
+.show-all {
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding-top: 52px;
+  }
+}
+
 .show-all__title {
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
+  margin-top: 53px;
+  margin-bottom: 8px;
+  color: #111111;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/plus.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: -53px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      background-size: 60px 60px;
+      width: 60px;
+      height: 60px;
+      top: -109px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 110%;
+    margin: 109px 50px 23px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 102px 15px 23px 15px;
+  }
 }
 
 .show-all__intro {
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 133%;
+  margin-bottom: 21px;
+  margin-top: 0;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 112%;
+    margin: 0 10px 87px 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-bottom: 87px;
+  }
 }
 
 .show-all__button {
-  color: #111111;
+  color: #444444;
   background-color: #f2f2f2;
   font-size: 16px;
   line-height: 125%;
+  width: 100%;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgb(68, 68, 68, 0.3);
+  }
 }

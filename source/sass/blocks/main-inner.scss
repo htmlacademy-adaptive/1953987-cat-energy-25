@@ -1,5 +1,6 @@
 .main-inner {
   padding-top: 27px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
@@ -8,19 +9,32 @@
   @media (min-width: $desktop-width) {
     padding-top: 74px;
   }
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 1px solid #d9d9d9;
+    top: 0;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .main-inner__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  margin-bottom: 49px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 82px;
+    margin-bottom: 163px;
+    font-size: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 84px;
+    margin-bottom: 165px;
   }
 }
