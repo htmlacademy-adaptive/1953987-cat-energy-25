@@ -1873,6 +1873,9 @@
     line-height: 150%;
   }
 }
+.text-field--email .text-field__icon {
+  stroke: #000000;
+}
 .text-field--email:hover .text-field__icon {
   stroke: #68b738;
 }
@@ -1922,7 +1925,8 @@
   border-color: #cdcdcd;
 }
 .text-field__input:focus {
-  border-color: #444444;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #444444;
   outline: none;
 }
 @media (min-width: 768px) {
