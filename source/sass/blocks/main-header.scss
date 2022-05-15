@@ -13,7 +13,7 @@
       width: 24px;
       height: 1.5px;
       background-color: #000000;
-      box-shadow: 0 6.5px 0 0 #000000, 0 13px 0 0 #000000;
+      box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
     }
 
     @media (max-width: $mobile-width-only) {
@@ -60,8 +60,9 @@
 
 .main-header__logo {
   text-decoration: none;
-  height: 65px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
   &:hover {
     opacity: 0.8;
@@ -73,6 +74,8 @@
 
   @media (min-width: $tablet-width) {
     width: 174px;
+    height: 52px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -82,26 +85,44 @@
 
 .main-header__logo-pic {
   width: 34px;
-  height: 65px;
+  height: 38px;
   margin-right: 56px;
 
   @media (min-width: $tablet-width) {
-    width: 60px;
-    margin-right: 8px;
+    width: 174px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: auto;
   }
 }
 
 .main-header__logo-text {
   width: 101px;
-  height: 65px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  padding-top: 11px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 21px;
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
   }
 }
 

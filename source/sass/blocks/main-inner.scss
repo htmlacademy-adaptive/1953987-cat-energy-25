@@ -1,13 +1,13 @@
 .main-inner {
-  padding-top: 27px;
+  padding-top: 28px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 77px;
   }
 
   &::before {
@@ -27,7 +27,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 163px;

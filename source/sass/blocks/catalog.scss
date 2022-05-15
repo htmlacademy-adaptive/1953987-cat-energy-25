@@ -30,13 +30,12 @@
   flex-wrap: wrap;
 
   &:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
-
 
   &::before {
     position: absolute;
@@ -53,7 +52,7 @@
   }
 
   &--all {
-    padding-top: 25px;
+    padding-top: 27px;
     display: block;
     text-align: center;
 
@@ -79,12 +78,18 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 38px;
+    padding-right: 37px;
     background-color: #f2f2f2;
     padding-top: 161px;
     padding-bottom: 39px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 164px;
+    padding-left: 39px;
+    padding-right: 38px;
   }
 }
 
@@ -98,8 +103,8 @@
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
-  margin-top: 11px;
-  margin-bottom: 18px;
+  margin-top: 13px;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     br {
@@ -108,13 +113,13 @@
 
     font-size: 20px;
     line-height: 120%;
-    margin: 0 50px 14px 50px;
+    margin: 0 50px 15px 50px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 105%;
-    margin: 0 20px 14px 20px;
+    margin: 0 12px 19px 17px;
   }
 }
 
@@ -122,10 +127,10 @@
   font-size: 16px;
   line-height: 125%;
   width: 100%;
-  margin-top: 13px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 33px;
+    margin-top: 30px;
   }
 }
 
@@ -151,7 +156,7 @@
 
   @media (min-width: $desktop-width) {
     width: 172px;
-    bottom: 46px;
+    bottom: 44px;
   }
 
   img {
@@ -159,6 +164,7 @@
     bottom: 0;
     transform: translateX(-50%);
     left: 50%;
+    max-width: 100%;
 
     @media (min-width: $tablet-width) {
       left: 0;
@@ -176,5 +182,13 @@
 
 .catalog__content {
   width: 100%;
-  border-spacing: 0;
+  border-collapse: collapse;
+
+  td {
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 6px 0 9px 0;
+    }
+  }
 }
