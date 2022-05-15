@@ -39,6 +39,7 @@
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     grid-column-end: 2;
+    margin-bottom: 25px;
   }
 }
 
@@ -59,11 +60,12 @@
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    margin: auto 0;
+    margin-top: 31px;
     justify-self: end;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 25px;
     justify-self: start;
   }
 }
@@ -74,10 +76,12 @@
   justify-self: end;
 
   @media (min-width: $tablet-width) {
-    margin: auto 0;
+    margin-top: 31px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 38px;
+    margin-top: 25px;
+    padding-left: 80px;
+    justify-self: start;
   }
 }

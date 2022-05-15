@@ -1,6 +1,6 @@
 .main-footer {
   background-color: #f2f2f2;
-  padding-top: 40px;
+  padding-top: 39px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -27,7 +27,7 @@
 .main-footer__logo {
   position: relative;
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -47,7 +47,7 @@
 }
 
 .main-footer__social {
-  padding-bottom: 21px;
+  padding-bottom: 17px;
   padding-top: 20px;
   position: relative;
   text-align: center;
@@ -58,6 +58,12 @@
     padding-top: 0;
     padding-bottom: 0;
     border: none;
+    width: 184px;
+    margin-left: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
   }
 }
 

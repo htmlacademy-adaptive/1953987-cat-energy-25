@@ -6,8 +6,8 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
-    padding-top: 64px;
-    padding-left: 87px;
+    padding-top: 61px;
+    padding-left: 29px;
     min-height: 810px;
   }
 
@@ -29,6 +29,10 @@
     min-width: 100%;
     min-height: 302px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background@2x.jpg");
+    }
+
     @media (min-width: $tablet-width) {
       display: none;
     }
@@ -39,6 +43,12 @@
       width: 50%;
       min-width: 720px;
       min-height: 694px;
+      background-image: url("../img/index-background-desktop.jpg");
+      background-position-y: 57px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -99,7 +109,7 @@
 }
 
 .promo__image {
-  margin-bottom: 3px;
+  // margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -111,7 +121,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translateX(-50%);
+    transform: translateX(-59%);
     width: 552px;
     height: 499px;
     top: 32px;

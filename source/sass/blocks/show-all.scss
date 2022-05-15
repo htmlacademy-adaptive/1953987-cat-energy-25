@@ -3,6 +3,11 @@
     background-color: #ffffff;
     padding-top: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 37px;
+    padding-right: 36px;
+  }
 }
 
 .show-all__title {
@@ -42,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 102px 15px 23px 15px;
+    margin: 106px 15px 23px 15px;
   }
 }
 

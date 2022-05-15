@@ -9,8 +9,8 @@
     padding-left: 40px;
     padding-right: 40px;
     width: 628px;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 61px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,7 @@
     padding-right: 80px;
     top: 95px;
     left: 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -50,16 +51,22 @@
   line-height: 143%;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 125%;
     text-align: end;
+    padding-right: 0;
 
     span {
       display: block;
-      margin-top: 16px;
+      margin-top: 19px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
