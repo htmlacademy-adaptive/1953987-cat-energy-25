@@ -305,6 +305,30 @@
   }
 }
 
+.button {
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #68b738;
+  font-size: 20px;
+  line-height: 129%;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.button:hover {
+  background-color: #5eaa2f;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
 .promo {
   color: #ffffff;
   padding-top: 27px;
@@ -442,30 +466,6 @@
     height: 499px;
     top: 32px;
   }
-}
-
-.button {
-  display: inline-block;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: #ffffff;
-  background-color: #68b738;
-  font-size: 20px;
-  line-height: 129%;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-sizing: border-box;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.button:hover {
-  background-color: #5eaa2f;
-}
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5eaa2f;
 }
 
 .visually-hidden {
