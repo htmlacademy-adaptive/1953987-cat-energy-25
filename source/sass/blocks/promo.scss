@@ -9,6 +9,7 @@
     padding-top: 61px;
     padding-left: 29px;
     min-height: 810px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,10 +57,12 @@
 .promo__button {
   font-size: 14px;
   width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     width: 244px;
-    padding: 14px 26px;
+    padding: 17px 10px;
     font-size: 20px;
     line-height: 100%;
   }
@@ -109,12 +112,10 @@
 }
 
 .promo__image {
-  // margin-bottom: 3px;
-
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    right: 0;
+    right: 30px;
     bottom: 0;
     width: 709px;
     height: 609px;

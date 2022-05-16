@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 77px;
 
     &::after {
       position: absolute;
@@ -50,8 +50,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 137px;
-    row-gap: 37px;
-    padding-right: 105px;
+    row-gap: 68px;
+    padding-right: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +69,7 @@
   position: relative;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
   }
 
   br {
@@ -80,18 +80,27 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../img/eco.svg");
+      background-image: url("../img/eco.png");
       background-repeat: no-repeat;
       background-size: 60px 60px;
       width: 60px;
       height: 60px;
       transform: translate(-80px, -2px);
 
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/eco@2x.png");
+      }
+
       @media (min-width: $tablet-width) {
+        background-image: url("../img/eco-tablet.png");
         background-size: 80px 80px;
         width: 80px;
         height: 80px;
         transform: translate(0, -111px);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/eco-tablet@2x.png");
+        }
       }
     }
   }
@@ -100,18 +109,27 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../img/form.svg");
+      background-image: url("../img/form.png");
       background-repeat: no-repeat;
       background-size: 60px 60px;
       width: 60px;
       height: 60px;
       transform: translate(-80px, -2px);
 
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/form@2x.png");
+      }
+
       @media (min-width: $tablet-width) {
+        background-image: url("../img/form-tablet.png");
         background-size: 80px 80px;
         width: 80px;
         height: 80px;
         transform: translate(0, -111px);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/form-tablet@2x.png");
+        }
       }
     }
 
@@ -124,18 +142,27 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../img/food.svg");
+      background-image: url("../img/food.png");
       background-repeat: no-repeat;
       background-size: 60px 60px;
       width: 60px;
       height: 60px;
       transform: translate(-80px, -2px);
 
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/food@2x.png");
+      }
+
       @media (min-width: $tablet-width) {
+        background-image: url("../img/food-tablet.png");
         background-size: 80px 80px;
         width: 80px;
         height: 80px;
         transform: translate(0, -111px);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/food-tablet@2x.png");
+        }
       }
     }
   }
@@ -144,18 +171,27 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../img/time.svg");
+      background-image: url("../img/time.png");
       background-repeat: no-repeat;
       background-size: 60px 60px;
       width: 60px;
       height: 60px;
       transform: translate(-80px, -2px);
 
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/time@2x.png");
+      }
+
       @media (min-width: $tablet-width) {
+        background-image: url("../img/time-tablet.png");
         background-size: 80px 80px;
         width: 80px;
         height: 80px;
         transform: translate(0, -111px);
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/time-tablet@2x.png");
+        }
       }
     }
   }
@@ -183,7 +219,7 @@
       color: #f2f2f2;
       position: absolute;
       top: 0;
-      left: 118px;
+      left: 115px;
       z-index: -1;
     }
   }
