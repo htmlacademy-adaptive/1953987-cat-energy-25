@@ -3,7 +3,7 @@
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
+    padding-top: 62px;
     padding-bottom: 66px;
   }
 
@@ -36,6 +36,7 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     width: 323px;

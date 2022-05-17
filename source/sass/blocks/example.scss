@@ -5,6 +5,10 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding-top: 43px;
+    padding-bottom: 62px;
+
     &::before {
       position: absolute;
       content: "";
@@ -17,15 +21,9 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    background-color: #ffffff;
-    padding-top: 43px;
-    padding-bottom: 62px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-top: 69px;
-    padding-bottom: 65px;
+    padding-bottom: 7px;
   }
 }
 
@@ -57,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 148px;
   }
 }
 
@@ -90,7 +88,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 360px;
+    margin-bottom: 50px;
   }
 }
 
@@ -188,5 +186,8 @@
 
 .example__column {
   z-index: 2;
-  margin-bottom: 62px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }
