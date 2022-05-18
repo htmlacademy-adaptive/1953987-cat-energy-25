@@ -11,7 +11,7 @@
     margin-bottom: 14px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 20px;
+      margin-bottom: 19px;
     }
   }
 
@@ -23,6 +23,7 @@
   &--email {
     .text-field__icon {
       stroke: #000000;
+      fill: none;
     }
 
     &:hover .text-field__icon {
@@ -80,8 +81,8 @@
   text-transform: uppercase;
   color: #444444;
   width: 100%;
-  margin-left: 15px;
-  padding: 13px 40px 14px 15px;
+  margin-left: 13px;
+  padding: 14px 40px 12px 15px;
   border: 1px solid #e7e7e7;
 
   &:hover {
@@ -95,14 +96,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 11px;
+    margin-left: 17px;
     font-size: 20px;
     line-height: 150%;
     padding: 10px 40px 11px 19px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 14px;
+    margin-left: 18px;
   }
 
   &::placeholder {

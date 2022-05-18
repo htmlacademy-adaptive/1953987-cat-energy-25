@@ -1,10 +1,14 @@
 .example {
   background-color: #eaeaea;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-top: 27px;
+  padding-bottom: 45px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    padding-top: 43px;
+    padding-bottom: 62px;
+
     &::before {
       position: absolute;
       content: "";
@@ -17,15 +21,9 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    background-color: #ffffff;
-    padding-top: 43px;
-    padding-bottom: 55px;
-  }
-
   @media (min-width: $desktop-width) {
     padding-top: 69px;
-    padding-bottom: 65px;
+    padding-bottom: 7px;
   }
 }
 
@@ -57,7 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 146px;
+    margin-bottom: 148px;
   }
 }
 
@@ -69,7 +67,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 54px;
+    margin-bottom: 53px;
     width: 97%;
   }
 
@@ -90,28 +88,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 360px;
+    margin-bottom: 50px;
   }
 }
 
 .example__item {
   text-align: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 19px;
+  padding-right: 21px;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   max-width: 124px;
   width: 100%;
   padding-top: 14px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 
   &:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 32px;
   }
 
   @media (min-width: $tablet-width) {
     max-width: 162px;
-    padding: 23px 10px 20px;
+    padding: 15px 10px 17px;
 
     &:not(:last-child) {
       margin-right: 42px;
@@ -161,16 +159,17 @@
   display: block;
   line-height: 143%;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 100%;
-    padding-top: 11px;
+    line-height: 150%;
+    padding-top: 6px;
     width: 174px;
     text-align: right;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -187,4 +186,8 @@
 
 .example__column {
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+  }
 }
