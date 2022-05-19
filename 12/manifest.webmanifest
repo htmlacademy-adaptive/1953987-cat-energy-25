@@ -1,0 +1,7 @@
+{
+  "icons": [{
+    "src": "img/apple-icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }]
+}
