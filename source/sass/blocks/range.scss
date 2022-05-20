@@ -74,6 +74,14 @@
     border-bottom: 1px dotted #d9d9d9;
     font-size: 20px;
     line-height: 150%;
+
+    &:hover {
+      border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-color: transparent;
+    }
   }
 }
 
@@ -114,6 +122,7 @@
   width: 86px;
   appearance: none;
   border-radius: 6px;
+  background: transparent;
 
   &::-webkit-slider-runnable-track {
     width: 85px;
@@ -141,6 +150,8 @@
 
   &::-moz-range-thumb {
     appearance: none;
+    border: none;
+    background: transparent;
   }
 
   @media (min-width: $tablet-width) {
@@ -174,6 +185,7 @@
     }
 
     &::-moz-range-track {
+      width: auto;
       height: 6px;
       background: #dcdcdc;
     }
