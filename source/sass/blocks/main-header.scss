@@ -55,6 +55,10 @@
     .main-header__toggle {
       display: none;
     }
+
+    .main-nav__item {
+      display: block;
+    }
   }
 }
 
@@ -102,7 +106,6 @@
 
 .main-header__logo-text {
   width: 101px;
-  height: 38px;
 
   @media (min-width: $tablet-width) {
     display: none;

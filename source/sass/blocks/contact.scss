@@ -39,10 +39,12 @@
   margin-right: 14px;
   margin-top: 0;
   margin-bottom: 0;
+  max-width: 127px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 130%;
+    max-width: 300px;
   }
 }
 
@@ -52,12 +54,14 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-right: 4px;
+  max-width: 135px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 125%;
     text-align: end;
     padding-right: 0;
+    max-width: 300px;
 
     span {
       display: block;
