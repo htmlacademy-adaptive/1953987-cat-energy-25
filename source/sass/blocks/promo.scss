@@ -69,6 +69,8 @@
 }
 
 .promo__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     padding-left: 88px;
   }
@@ -120,17 +122,16 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     z-index: -1;
-    right: 30px;
-    bottom: 0;
+    left: 0;
+    top: 201px;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    transform: translateX(-59%);
     width: 552px;
     height: 499px;
-    top: 30px;
-    right: 4px;
+    top: -81px;
+    left: 37%;
   }
 }

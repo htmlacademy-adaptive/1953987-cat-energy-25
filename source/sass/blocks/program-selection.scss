@@ -81,7 +81,7 @@
         background-size: 200px 211px;
         width: 200px;
         height: 211px;
-        bottom: -181px;
+        bottom: -179px;
         left: 394px;
       }
 
@@ -158,16 +158,15 @@
     background-size: 32px 12px;
     width: 32px;
     height: 12px;
-    top: 5px;
+    top: 50%;
+    transform: translateY(-50%);
     right: -49px;
 
     @media (min-width: $tablet-width) {
-      top: 9px;
       right: -57px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 8px;
       right: -61px;
     }
   }

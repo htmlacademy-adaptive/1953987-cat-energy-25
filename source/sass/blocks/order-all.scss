@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-color: #68b738;
   text-align: center;
-  padding-top: 58px;
+  padding-top: 141px;
   padding-bottom: 43px;
 
   @media (min-resolution: 2dppx) {
@@ -14,18 +14,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 57px 124px 60px 77px;
+    padding: 57px 124px 68px 77px;
     text-align: left;
-    justify-content: space-between;
+    justify-content: end;
     background-image: url("../img/catalog-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog-background-tablet@2x.jpg");
-    }
-
-    svg {
-      width: 80px;
-      height: 82px;
     }
   }
 
@@ -52,6 +47,27 @@
   line-height: 125%;
   max-width: 165px;
   margin: 46px auto 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    top: -129px;
+    left: 43px;
+    width: 78px;
+    height: 80px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: -345px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -131px;
+      left: 43px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 14px;
