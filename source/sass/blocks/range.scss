@@ -42,7 +42,7 @@
       left: 50%;
 
       img {
-        transform: translate(-45%, 0);
+        transform: translate(-45%, -4px) scale(0.98);
       }
     }
   }
@@ -54,7 +54,7 @@
       height: 500px;
 
       img {
-        transform: translate(0, -39px);
+        transform: translate(-13px, -34px) scale(0.96);
       }
     }
   }

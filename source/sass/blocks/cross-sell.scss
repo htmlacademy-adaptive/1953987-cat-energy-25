@@ -19,13 +19,14 @@
   }
 }
 
-.cross-sell__container {
+.cross-sell__list {
+  @include clear-list;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
-    margin-bottom: 69px;
+    margin-bottom: 71px;
   }
 
   @media (min-width: $desktop-width) {

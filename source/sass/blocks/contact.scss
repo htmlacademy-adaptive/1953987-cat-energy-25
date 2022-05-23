@@ -29,6 +29,10 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+
+  &--color {
+    background-color: #f2f2f2;
+  }
 }
 
 .contact__title {
@@ -40,6 +44,7 @@
   margin-top: 0;
   margin-bottom: 0;
   max-width: 127px;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -55,6 +60,7 @@
   margin-bottom: 0;
   padding-right: 4px;
   max-width: 135px;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -87,8 +93,4 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
-}
-
-.contact__color {
-  background-color: #f2f2f2;
 }

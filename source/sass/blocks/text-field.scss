@@ -26,7 +26,7 @@
       fill: none;
     }
 
-    &:hover .text-field__icon {
+    &:focus-within .text-field__icon {
       stroke: #68b738;
     }
 
@@ -41,7 +41,7 @@
   }
 
   &--tel {
-    &:hover .text-field__icon {
+    &:focus-within .text-field__icon {
       fill: #68b738;
     }
 

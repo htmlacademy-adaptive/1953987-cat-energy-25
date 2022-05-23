@@ -14,7 +14,7 @@
       content: "";
       width: 100%;
       height: 462px;
-      background: #eaeaea;
+      background: #f2f2f2;
       left: 0;
       right: 0;
       bottom: 0;
@@ -94,8 +94,6 @@
 
 .example__item {
   text-align: center;
-  padding-left: 19px;
-  padding-right: 21px;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   max-width: 124px;
@@ -109,7 +107,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 162px;
-    padding: 15px 10px 17px;
+    padding: 15px 0 17px;
 
     &:not(:last-child) {
       margin-right: 42px;
@@ -118,7 +116,6 @@
 }
 
 .example__block {
-  max-width: inherit;
   padding: 0;
   margin-bottom: -25px;
 }
@@ -130,28 +127,31 @@
   margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 11px;
+    margin-bottom: 8px;
     font-size: 30px;
     line-height: 123%;
   }
 }
 
 .example__parameter {
+  display: inline-block;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 100%;
   color: #444444;
   margin: 0;
-  margin-bottom: -15px;
+  padding: 0 7px;
+  max-width: 76px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     font-size: 14px;
+    max-width: 128px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
   }
 }
 
