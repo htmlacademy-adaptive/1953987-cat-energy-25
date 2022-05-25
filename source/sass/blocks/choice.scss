@@ -9,10 +9,14 @@
   &--radio {
     .choice__input {
       /* stylelint-disable */
-      &:checked+.choice__control::before
+      &:disabled
 
       /* stylelint-enable */
         {
+        opacity: 0.3;
+      }
+
+      &:checked+.choice__control::before {
         position: absolute;
         width: 14px;
         height: 14px;
