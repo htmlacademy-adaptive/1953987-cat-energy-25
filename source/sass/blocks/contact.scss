@@ -82,6 +82,7 @@
 
 .contact__map {
   height: 362px;
+  position: relative;
 
   iframe {
     border: none;
@@ -93,4 +94,11 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+}
+
+.contact__map-spare {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
