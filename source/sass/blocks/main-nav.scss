@@ -57,6 +57,13 @@
   @media (min-width: $desktop-width) {
     width: 686px;
   }
+
+  &--width {
+    @media (min-width: $desktop-width) {
+      width: 600px;
+      margin-left: auto;
+    }
+  }
 }
 
 .main-nav__item {

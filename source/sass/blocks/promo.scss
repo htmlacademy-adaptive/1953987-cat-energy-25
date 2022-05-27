@@ -17,41 +17,6 @@
     min-height: 472px;
     padding-bottom: 82px;
   }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    background-image: url("../img/index-background.jpg");
-    background-color: #68b738;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -1;
-    min-width: 100%;
-    min-height: 302px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background@2x.jpg");
-    }
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      top: -111px;
-      width: 50%;
-      min-width: 720px;
-      min-height: 694px;
-      background-image: url("../img/index-background-desktop.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-      }
-    }
-  }
 }
 
 .promo__button {

@@ -16,6 +16,10 @@
         opacity: 0.3;
       }
 
+      &:disabled~.choice__text {
+        opacity: 0.3;
+      }
+
       &:checked+.choice__control::before {
         position: absolute;
         width: 14px;
@@ -65,6 +69,10 @@
 }
 
 .choice__input {
+
+  &:disabled~.choice__text--black {
+    opacity: 0.3;
+  }
 
   &:checked+.choice__control::before {
     position: absolute;
